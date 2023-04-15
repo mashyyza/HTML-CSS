@@ -3,7 +3,7 @@ body {
     color:rgb(0, 0, 0);
     background-color:rgba(202, 197, 177, 0.83);
     /*background: radial-gradient(circle, rgba(217,207,205,1) 15%, rgba(194,185,183,1) 69%, rgba(231,213,208,1) 89%);*/
-    background-image: url('./img/backgraund.jpg');
+    background-image: url('./assets/img/backgraund.jpg');
     background-position: left;
     background-size:cover;
     background-attachment: fixed;
