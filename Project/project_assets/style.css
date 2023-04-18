@@ -3,11 +3,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    background-color: #FFFFFF;
 }
 
 .site-header {
-    width: 100%;
-    position:fixed;
+    
+    position:absolute;
     top: 0px;
     display: flex;
     flex-direction: row;
@@ -15,6 +20,10 @@ body {
     align-items: center;
     font-size:20px;
     z-index: 3;
+    }
+
+    .heder-wrapper {
+        width: 1260px;
     }
 
 .logo {
@@ -56,8 +65,8 @@ a {
  }
 
 .first-screen {
-    width: 100vw;
-    height: 100vw;
+    width: 1440px;
+    height: 729px;
     background-color: #f1fdffb2;
     ;
 }
@@ -97,10 +106,10 @@ a {
  }
 
   .fond-woman {
-    width: 840px;
-    height: 796px;
-    top:-30px;
-    left: 475px;
+    width: 1448px;
+    height: 877px;
+    top: -148px;
+    left: 425px;
     position: absolute;
     z-index: 2;
     max-width: 100%;
@@ -109,12 +118,10 @@ a {
 
 
 .vector{
-    width: 2190px;
-    height: 880px;
+    width: 840px;
+    height: 796px;
     position:absolute;
-    top: -74px;
-    left: 472px;
-    bottom: 10%;
+    top: -74px -0px;
+    left: 472px -0px;
     z-index: 1;
-    max-width: 100%
 }
