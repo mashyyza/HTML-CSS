@@ -1,37 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #000;
-    background-color: #FFFFFF;
 }
 
+
+/* Header */
+
 .site-header {
-    
-    position:absolute;
-    top: 0px;
+    width: 100%;
+    position: fixed;
+    top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    font-size:20px;
-    z-index: 3;
-    }
+    font-size: 20px;
+    padding: 0 2%;
+    box-sizing: border-box;
+    z-index: 5;
+}
 
-    .heder-wrapper {
-        width: 1260px;
-    }
+.hamburger-icon {
+    display: none;
+}
+
 
 .logo {
     width: 65px;
     height: 65px;
-    padding: 30px;
-    margin-left: 100px;
-    }
+}
+
 
 a {
     color: inherit;
@@ -40,88 +38,126 @@ a {
 
 .menu-list {
     display: flex;
-    flex-direction: row;  
-    align-items: center;  
-    
-}
-    
-.menu-button {
-    padding: 0.5em 1em;
-    background-color:#7AE5FD;
-    border-radius: 87px;
-    text-transform: uppercase;
-
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu-item {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;
-    padding: 20px;
-    margin:0 24px;
-    font-size:20px;
-    gap:56px;
-    
- }
+    margin: 0 1em;
+}
+
+
+.menu-button {
+padding: 0.6em 1.5em;
+background-color: #7AE5FD;
+border-radius: 20px;
+text-transform: uppercase;
+}
 
 .first-screen {
-    width: 1440px;
-    height: 729px;
-    background-color: #f1fdffb2;
-    ;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F1FDFF;
 }
 
-.name-event {
-    width: 698px;
-    height: 264px;
-    position:absolute;
-    top: 200px;
-    left:100px;
-    font-family:'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 93px;
-    color:#9AD2DE;
-    text-transform: uppercase;
-    line-height: 87px;
-    z-index: 2;
-}
 
-.text-about-event {
-    width: 484px;
-    height: 48px;
-    position:absolute;
-    top: 528px;
-    left:101px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-    text-transform:none;
-    line-height: 24px;
-}
 
-.container {
+/*
+First screen
+*/
+
+.first-screen {
     display: flex;
-    justify-content: flex-end;
-    height: 100%;
- }
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
 
-  .fond-woman {
-    width: 1448px;
-    height: 877px;
-    top: -148px;
-    left: 425px;
+.heading-first-screen {
+    font-size: 6.5rem;
+    color: #9AD2DE;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+}
+
+.first-screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 3%;
+}
+
+.subheading-first-screen {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 8%;
+}
+
+.woman-first-screen {
+    width: 70%;
+    height: 100%;
     position: absolute;
+    right: 0;
+    bottom: 5%;
     z-index: 2;
-    max-width: 100%;
-    
+    object-fit: cover;
+}
+
+.kryvulina {
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    width: 50%;
+    z-index: 1;
 }
 
 
-.vector{
-    width: 840px;
-    height: 796px;
-    position:absolute;
-    top: -74px -0px;
-    left: 472px -0px;
-    z-index: 1;
+
+@media screen and (max-width: 390px) {
+    .logo {
+        display: none;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        width: 60px;
+    }
+
+    .site-header {
+        justify-content: flex-end;
+    }
+
+    .heading-first-screen {
+        font-size: 2rem;
+    } 
+
+    .subheading-first-screen {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .first-screen-wrapper {
+        max-width: none;
+    }
+
+    .first-screen {
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+    .woman-first-screen {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+
+    .kryvulina {
+        display: none;
+    }
 }
